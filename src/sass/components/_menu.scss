@@ -1,0 +1,56 @@
+.menu-container {
+  min-height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  padding: 13vh 10vw;
+  font-family: "Neue Montreal", sans-serif;
+
+  .menu-section {
+    width: 100%;
+
+    .menu-section-title {
+      display: inline-block;
+      font-size: 2.3em;
+      text-transform: uppercase;
+      padding-bottom: 10vh;
+
+      &.beers, &.red-wine, &.white-wine, &.sparkling, &.alcool-free {
+        margin-top: 5vh;
+      }
+
+      &.glass, &.coffee {
+        margin-top: 8.5vh;
+      }
+    }
+
+    .product {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5vh;
+
+      &.beers, &.alcool-free, &.coffee {
+        margin-bottom: 1.5vh;
+      }
+
+      .product-details {
+        display: flex;
+        flex-direction: column;
+
+        .product-title {
+          font-size: 1.5em;
+          padding-bottom: 1vh;
+        }
+
+        .product-ingredients {
+          font-size: 1.2em;
+        }
+      }
+
+      .product-price {
+        font-size: 1.5em;
+      }
+    }
+  }
+}
