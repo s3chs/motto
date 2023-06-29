@@ -2,7 +2,7 @@ import menu, { Menu, Product } from '../../data/menu';
 
 export default function MenuComponent() {
     return (
-        <div className="menu-container">
+        <div className="menu-container" data-scroll-section>
             <span className="section-title">menu</span>
 
             {menu.map((menu: Menu, menuIndex: number) => (

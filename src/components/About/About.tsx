@@ -1,6 +1,6 @@
 export default function About() {
     return (
-        <div className="about-container">
+        <div className="about-container" data-scroll-section>
             <span className="section-title">à propos</span>
             <p className="about-text">Partager, boire, écouter, manger, vivre et beaucoup rigoler.</p>
             <p className="about-text">En quelques mots la devise du Motto est énoncée.
