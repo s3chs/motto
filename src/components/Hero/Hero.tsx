@@ -2,7 +2,7 @@ export default function Hero() {
     return (
         <div className="hero-container" data-scroll-section>
             <div className="hero-content">
-                <span className="bar-description" data-scroll data-scroll-speed="-0.5"
+                <span className="bar-description" data-scroll data-scroll-speed="0.5"
                       data-scroll-position="top">hi-fi music, food & drinks</span>
                 <div className="hero-title" data-scroll data-scroll-speed="1.5" data-scroll-position="top">
                     <span>motto</span>
