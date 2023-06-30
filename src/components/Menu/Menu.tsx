@@ -7,8 +7,16 @@ export default function MenuComponent() {
 
             {menu.map((menu: Menu, menuIndex: number) => (
                 <div className="menu-section" key={menuIndex}>
-                    <span className={`menu-section-title ${menu.customClass}`}>{menu.MenuTitle}</span>
-                    {menu.Products.map((product: Product, productIndex: number) => (
+                    <div className={`menu-section-title ${menu.customClass}`}>
+                        {menu.menuTitle.split('').map((letter: string, letterIndex: number) =>
+                            letter === ' ' ?
+                                (<span data-scroll data-scroll-speed={menu.menuTitleLocoScrollValues[letterIndex]}
+                                       key={letterIndex}>&nbsp;</span>) :
+                                (<span data-scroll data-scroll-speed={menu.menuTitleLocoScrollValues[letterIndex]}
+                                       key={letterIndex}>{letter}</span>),
+                        )}
+                    </div>
+                    {menu.products.map((product: Product, productIndex: number) => (
                         <div className={`product ${menu.customClass}`} key={productIndex}>
                             <div className="product-details">
                                 <span className="product-title">{product.productTitle}</span>

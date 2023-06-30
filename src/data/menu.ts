@@ -5,15 +5,17 @@ export type Product = {
 }
 
 export type Menu = {
-    MenuTitle: string
-    Products: Product[]
+    menuTitle: string
+    menuTitleLocoScrollValues: number[]
+    products: Product[]
     customClass: string
 }
 
 const menu: Menu[] = [
     {
-        MenuTitle: 'cocktails',
-        Products: [
+        menuTitle: 'cocktails',
+        menuTitleLocoScrollValues: [0.4, 0.8, 0.41, 0.75, 1, 0.9, 0.3, 0.52, 0.8],
+        products: [
             {
                 productTitle: 'Just a Spicy Tequila',
                 productIngredients: ['Tequila', 'menthe', 'habañero', 'agave'],
@@ -58,8 +60,9 @@ const menu: Menu[] = [
         customClass: 'cocktails',
     },
     {
-        MenuTitle: 'apéritifs & bières',
-        Products: [
+        menuTitle: 'apéritifs & bières',
+        menuTitleLocoScrollValues: [0.5, -0.2, 0.2, -0.1, -0.25, 0.4, -0.1, 0.6, 0.5, 0, 0.4, 0, 0.92, 0.22, 0.3, -0.15, -0.2, 0.6],
+        products: [
             {
                 productTitle: 'Blonde pression',
                 productIngredients: null,
@@ -104,8 +107,9 @@ const menu: Menu[] = [
         customClass: 'beers',
     },
     {
-        MenuTitle: 'au verre',
-        Products: [
+        menuTitle: 'au verre',
+        menuTitleLocoScrollValues: [0.3, -0.1, 0, 0.35, -0.2, 0.4, 0.1, 0.1],
+        products: [
             {
                 productTitle: 'Amour de Fruits',
                 productIngredients: ['Rhône', 'Grenache', 'Cinsault', '2022'],
@@ -140,8 +144,9 @@ const menu: Menu[] = [
         customClass: 'glass',
     },
     {
-        MenuTitle: 'rouge',
-        Products: [
+        menuTitle: 'rouge',
+        menuTitleLocoScrollValues: [0.7, 0.9, 0.4, 0.6, 0.45],
+        products: [
             {
                 productTitle: 'Amour de Fruits, 75cl',
                 productIngredients: ['Rhône', 'Grenache', 'Syrah', '2022'],
@@ -226,8 +231,9 @@ const menu: Menu[] = [
         customClass: 'red-wine',
     },
     {
-        MenuTitle: 'blanc',
-        Products: [
+        menuTitle: 'blanc',
+        menuTitleLocoScrollValues: [0.4, 0.6, 0.8, 0.3, -0.3],
+        products: [
             {
                 productTitle: 'Amour de Fruits, 75cl',
                 productIngredients: ['VDF', 'Rhône', '2021'],
@@ -277,8 +283,9 @@ const menu: Menu[] = [
         customClass: 'white-wine',
     },
     {
-        MenuTitle: 'pétillant & autre',
-        Products: [
+        menuTitle: 'pétillant & autre',
+        menuTitleLocoScrollValues: [0.1, 0.23, 0.55, 0.5, 0.55, 0.6, 0.65, 0.7, 0.9, 0, 0.5, 0, -0.1, 0.3, 0.45, 0.67, 0.8],
+        products: [
             {
                 productTitle: 'Ça Gazouille, 75cl',
                 productIngredients: ['Loire', 'Sauvignon', '2022'],
@@ -318,8 +325,9 @@ const menu: Menu[] = [
         customClass: 'sparkling',
     },
     {
-        MenuTitle: 'boissons sans alcool',
-        Products: [
+        menuTitle: 'boissons sans alcool',
+        menuTitleLocoScrollValues: [0.4, 0.55, 0.1, 0.2, -0.10, 0.3, 0.2, 0.6, 0, 0.5, 0.7, 0.8, 1, 0, 0.3, 0.5, 0.1, -0.2, 0.2, 0.4],
+        products: [
             {
                 productTitle: 'Eau minérale',
                 productIngredients: null,
@@ -354,8 +362,9 @@ const menu: Menu[] = [
         customClass: 'alcool-free',
     },
     {
-        MenuTitle: 'café',
-        Products: [
+        menuTitle: 'café',
+        menuTitleLocoScrollValues: [0.2, -0.2, -0.4, -0.6],
+        products: [
             {
                 productTitle: 'Espresso/Double Espresso',
                 productIngredients: null,
