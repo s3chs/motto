@@ -20,20 +20,31 @@
     text-transform: uppercase;
 
     .bar-description {
-      display: block;
-      text-align: end;
-      font-size: 2em;
-      font-weight: 300;
+      overflow: hidden;
+
+      span {
+        text-align: end;
+        display: block;
+        font-size: 2em;
+        font-weight: 300;
+
+        transform: translateY(100%);
+      }
     }
 
     .hero-title {
+      display: flex;
       font-family: "Neue Montreal", sans-serif;
       font-style: italic;
       font-weight: 600;
       text-align: center;
-      font-size: 23vw;
+      font-size: 20vw;
+      padding-top: 7vh;
+      overflow: hidden;
 
-      margin-top: 7vh;
+      span {
+        transform: translateY(100%);
+      }
     }
 
     .bar-infos {
@@ -42,10 +53,16 @@
       justify-content: space-between;
 
       .bar-openings {
-        span {
-          display: block;
-          font-size: 1.3em;
-          font-weight: 300;
+        div {
+          overflow: hidden;
+
+          span {
+            display: block;
+            font-size: 1.3em;
+            font-weight: 300;
+            transform: translateY(100%);
+
+          }
 
           &:nth-last-child(1) {
             margin-top: 7vh;
@@ -57,6 +74,10 @@
         display: flex;
         font-size: 2em;
         font-weight: 300;
+
+        span {
+          opacity: 0;
+        }
       }
     }
   }
