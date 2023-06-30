@@ -3,7 +3,7 @@ import menu, { Menu, Product } from '../../data/menu';
 export default function MenuComponent() {
     return (
         <div className="menu-container" data-scroll-section>
-            <span className="section-title">menu</span>
+            <span className="section-title" data-scroll data-scroll-speed='1'>menu</span>
 
             {menu.map((menu: Menu, menuIndex: number) => (
                 <div className="menu-section" key={menuIndex}>
@@ -17,7 +17,7 @@ export default function MenuComponent() {
                         )}
                     </div>
                     {menu.products.map((product: Product, productIndex: number) => (
-                        <div className={`product ${menu.customClass}`} key={productIndex}>
+                        <div className={`product ${menu.customClass}`} key={productIndex} data-scroll data-scroll-speed='0.5'>
                             <div className="product-details">
                                 <span className="product-title">{product.productTitle}</span>
                                 <span className="product-ingredients">
