@@ -363,7 +363,7 @@ const menu: Menu[] = [
     },
     {
         menuTitle: 'café',
-        menuTitleLocoScrollValues: [0.2, -0.2, -0.4, -0.6],
+        menuTitleLocoScrollValues: [0.2, -0.2, -0.4, -0.3],
         products: [
             {
                 productTitle: 'Espresso/Double Espresso',

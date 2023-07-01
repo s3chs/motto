@@ -1,7 +1,17 @@
 import gsap from 'gsap';
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
+import useDestructureString from '../../utils/useDestructureString';
 
 export default function Hero() {
+
+    const barDescription = 'hi-fi music, food & drinks';
+    const barName = 'motto';
+
+    const destructureString = (string: string) => {
+        return string.split('').map((letter: string, i: number) => {
+            return letter === ' ' ? (<span key={i}>&nbsp;</span>) : (<span key={i}>{letter}</span>);
+        });
+    };
 
     useEffect(() => {
         const tl = gsap.timeline();
@@ -16,35 +26,31 @@ export default function Hero() {
             y: 0,
             ease: 'power3.inOut',
             stagger: 0.2,
-            delay: -2,
-        }).to('.bar-description span', {
-            duration: 0.8,
-            y: '0',
-            ease: 'power3.inOut',
-            delay: -1,
-        }).to('.motto-mantra span', {
-            duration: 0.3,
+            delay: -1.5,
+        }).add('opacityAnim').to('.bar-description span', {
+            duration: 0.25,
             opacity: 1,
-            ease: 'power2.inOut',
-            stagger: 0.08,
+            ease: 'power3.inOut',
+            stagger: 0.035,
             delay: -0.8,
-        });
+        }).to('.motto-mantra span', {
+            duration: 0.25,
+            opacity: 1,
+            ease: 'power3.inOut',
+            stagger: 0.070,
+            delay: -0.8,
+        }, 'opacityAnim');
     }, []);
 
     return (
         <div className="hero-container" data-scroll-section>
             <div className="hero-content">
                 <div className="bar-description" data-scroll data-scroll-speed="1" data-scroll-position="top">
-                    <span>
-                        hi-fi music, food & drinks
-                    </span>
+                    {destructureString(barDescription)}
                 </div>
                 <div className="hero-title" data-scroll data-scroll-speed="1.5" data-scroll-position="top">
-                    <span>m</span>
-                    <span>o</span>
-                    <span>t</span>
-                    <span>t</span>
-                    <span>o</span>
+                    {destructureString(barName)}
+
                 </div>
                 <div className="bar-infos">
                     <div className="bar-openings" data-scroll data-scroll-speed="1" data-scroll-position="top">
