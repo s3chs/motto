@@ -1,7 +1,16 @@
+import { ReactNode, useEffect, useRef } from 'react';
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
-import { ReactNode } from 'react';
 
-export default function Layout({children}: {children: ReactNode}) {
+export const Layout = ({children}: {children: ReactNode}) => {
+
+    const containerRef = useRef<any>(null);
+
+    useEffect(() => {
+        setTimeout(() => {
+            containerRef.current.style.overflow = 'auto';
+            containerRef.current.style.height = '100%';
+        }, 2500);
+    }, []);
 
     return (
         <LocomotiveScrollProvider options={{
@@ -17,9 +26,9 @@ export default function Layout({children}: {children: ReactNode}) {
             },
             scrollFromAnywhere: true,
         }}
-
+                                  containerRef={containerRef}
         >
-            <main data-scroll-container className="layout-container">
+            <main data-scroll-container ref={containerRef} className="layout-container">
                 {children}
             </main>
         </LocomotiveScrollProvider>

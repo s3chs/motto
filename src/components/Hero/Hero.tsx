@@ -27,6 +27,11 @@ export default function Hero() {
             ease: 'power3.inOut',
             stagger: 0.2,
             delay: -1.5,
+        }).to('.navbar-container', {
+            duration: 1.5,
+            top: 0,
+            ease: 'power3.inOut',
+            delay: -2,
         }).add('opacityAnim').to('.bar-description span', {
             duration: 0.25,
             opacity: 1,
@@ -46,10 +51,10 @@ export default function Hero() {
         <div className="hero-container" data-scroll-section>
             <div className="hero-content">
                 <div className="bar-description" data-scroll data-scroll-speed="1" data-scroll-position="top">
-                    {destructureString(barDescription)}
+                    {useDestructureString(barDescription)}
                 </div>
                 <div className="hero-title" data-scroll data-scroll-speed="1.5" data-scroll-position="top">
-                    {destructureString(barName)}
+                    {useDestructureString(barName)}
 
                 </div>
                 <div className="bar-infos">

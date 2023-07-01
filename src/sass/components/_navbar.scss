@@ -2,15 +2,64 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   position: fixed;
-  top: 0;
-
-  height: 15vh;
+  top: -50vh;
+  height: 10vh;
   width: 100%;
   padding: 0 5vw;
+  z-index: 100;
 
   .motto-logo {
     height: 7vh;
+  }
+
+  .nav-links {
+    display: flex;
+    font-family: "Neue Montreal", sans-serif;
+    mix-blend-mode: difference;
+
+    div {
+      cursor: pointer;
+      display: flex;
+      padding-right: 5vw;
+
+      &:nth-last-child(1) {
+        margin-right: 0;
+      }
+
+      span {
+        display: block;
+        font-size: 1.2em;
+        transition: transform 0.3s ease;
+      }
+    }
+
+    .about:hover span:nth-child(odd) {
+      transform: translateY(-5px);
+    }
+
+    .about:hover span:nth-child(even) {
+      transform: translateY(5px);
+    }
+
+    .about:hover span:nth-child(1) {
+      transform: translateY(5px);
+    }
+
+    .menu:hover span:nth-child(odd) {
+      transform: translateY(-5px);
+    }
+
+    .menu:hover span:nth-child(even) {
+      transform: translateY(5px);
+    }
+
+    .gallery:hover span:nth-child(odd) {
+      transform: translateY(5px);
+    }
+
+    .gallery:hover span:nth-child(even) {
+      transform: translateY(-5px);
+    }
   }
 }

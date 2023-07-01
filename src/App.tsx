@@ -6,7 +6,7 @@ import About from './components/About/About';
 import Menu from './components/Menu/Menu';
 import Gallery from './components/Gallery/Gallery';
 import Footer from './components/Footer/Footer';
-import Layout from './components/Layout/Layout';
+import { Layout } from './components/Layout/Layout';
 
 function App() {
     return (
