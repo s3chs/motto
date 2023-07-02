@@ -48,7 +48,7 @@ export default function Hero() {
     }, []);
 
     return (
-        <div className="hero-container" data-scroll-section>
+        <div id="hero" className="hero-container" data-scroll-section>
             <div className="hero-content">
                 <div className="bar-description" data-scroll data-scroll-speed="1" data-scroll-position="top">
                     {useDestructureString(barDescription)}

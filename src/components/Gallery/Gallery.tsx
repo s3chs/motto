@@ -2,7 +2,7 @@ import pictures from '../../data/pictures';
 
 export default function Gallery() {
     return (
-        <div className="gallery-container" data-scroll-section>
+        <div id='gallery' className="gallery-container" data-scroll-section>
             <span className="section-title" data-scroll data-scroll-speed="1">gallerie</span>
             <div className="gallery">
                 <div className="picture picture-1">

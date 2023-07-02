@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Sechs';
+  src: local('PP Neue Montreal'),
+  url('./customfont/PPNeueMontreal-Regular.ttf') format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sechs';
+  src: local('PP Neue Montreal'),
+  url('./customfont/PPNeueMontreal-BoldItalic.ttf') format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}

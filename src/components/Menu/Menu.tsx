@@ -8,7 +8,7 @@ export default function MenuComponent() {
     );
 
     return (
-        <div className="menu-container" data-scroll-section>
+        <div id='menu' className="menu-container" data-scroll-section>
       <span className="section-title" data-scroll data-scroll-speed="1">
         menu
       </span>
