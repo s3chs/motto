@@ -55,7 +55,6 @@ export default function Hero() {
                 </div>
                 <div className="hero-title" data-scroll data-scroll-speed="1.5" data-scroll-position="top">
                     {useDestructureString(barName)}
-
                 </div>
                 <div className="bar-infos">
                     <div className="bar-openings" data-scroll data-scroll-speed="1" data-scroll-position="top">

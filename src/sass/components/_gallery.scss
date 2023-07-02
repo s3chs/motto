@@ -4,14 +4,14 @@
 
   display: flex;
   flex-direction: column;
-  padding: 13vh 10vw 5vh 13vh;
+  padding: 13vh 10vw 5vh 10vw;
 
   .gallery {
-    margin-bottom: 3vh;
+    margin-bottom: 2vh;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
-    grid-gap: 3vh;
+    grid-gap: 2vh;
 
     height: 90vh;
     width: 100%;

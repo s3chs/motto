@@ -11,11 +11,11 @@ export default function Gallery() {
                 </div>
                 <div className="picture picture-2">
                     <img src={pictures[0]} alt="pic-2"
-                         data-scroll data-scroll-class="reveal-img" data-scroll-offset="100"/>
+                         data-scroll data-scroll-class="reveal-img" data-scroll-offset="120"/>
                 </div>
                 <div className="picture picture-3">
                     <img src={pictures[2]} alt="pic-3"
-                         data-scroll data-scroll-class="reveal-img" data-scroll-offset="100"/>
+                         data-scroll data-scroll-class="reveal-img" data-scroll-offset="150"/>
                 </div>
             </div>
             <div className="gallery">
@@ -25,7 +25,7 @@ export default function Gallery() {
                 </div>
                 <div className="picture picture-5">
                     <img src={pictures[5]} alt="pic-5"
-                         data-scroll data-scroll-class="reveal-img" data-scroll-offset="100"/>
+                         data-scroll data-scroll-class="reveal-img" data-scroll-offset="120"/>
                 </div>
             </div>
             <div className="gallery">
@@ -35,11 +35,11 @@ export default function Gallery() {
                 </div>
                 <div className="picture picture-7">
                     <img src={pictures[8]} alt="pic-7"
-                         data-scroll data-scroll-class="reveal-img" data-scroll-offset="100"/>
+                         data-scroll data-scroll-class="reveal-img" data-scroll-offset="110"/>
                 </div>
                 <div className="picture picture-8">
                     <img src={pictures[6]} alt="pic-8"
-                         data-scroll data-scroll-class="reveal-img" data-scroll-offset="100"/>
+                         data-scroll data-scroll-class="reveal-img" data-scroll-offset="120"/>
                 </div>
             </div>
             <div className="gallery">
@@ -49,21 +49,21 @@ export default function Gallery() {
                 </div>
                 <div className="picture picture-10">
                     <img src={pictures[11]} alt="pic-10"
-                         data-scroll data-scroll-class="reveal-img" data-scroll-offset="100"/>
+                         data-scroll data-scroll-class="reveal-img" data-scroll-offset="110"/>
                 </div>
                 <div className="picture picture-11">
                     <img src={pictures[9]} alt="pic-11"
-                         data-scroll data-scroll-class="reveal-img" data-scroll-offset="100"/>
+                         data-scroll data-scroll-class="reveal-img" data-scroll-offset="120"/>
                 </div>
             </div>
             <div className="gallery">
                 <div className="picture picture-12">
                     <img src={pictures[12]} alt="pic-12"
-                         data-scroll data-scroll-class="reveal-img" data-scroll-offset="100"/>
+                         data-scroll data-scroll-class="reveal-img" data-scroll-offset="110"/>
                 </div>
                 <div className="picture picture-13">
                     <img src={pictures[10]} alt="pic-13"
-                         data-scroll data-scroll-class="reveal-img" data-scroll-offset="100"/>
+                         data-scroll data-scroll-class="reveal-img" data-scroll-offset="120"/>
                 </div>
             </div>
         </div>

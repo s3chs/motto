@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section-title {
+  font-family: "Neue Montreal", sans-serif;
+  font-size: 5.5em;
+  text-transform: uppercase;
+  margin-top: 2vh;
+  margin-bottom: 10vh;
+  color: $black;
+
+  @media screen and (max-width: $layout-breakpoint-small) {
+    font-size: 5em;
+  }
+
+  @media screen and (max-width: $layout-breakpoint-xsmall) {
+    font-size: 3.5em;
+  }
+}
+
+body {
+  background-color: $white;
+}

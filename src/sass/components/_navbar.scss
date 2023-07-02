@@ -11,17 +11,22 @@
 
   .motto-logo {
     height: 7vh;
+
+    @media screen and (max-width: $layout-breakpoint-xsmall) {
+      height: 5vh;
+    }
   }
 
   .nav-links {
     display: flex;
     font-family: "Neue Montreal", sans-serif;
     mix-blend-mode: difference;
+    color: $black;
 
     div {
       cursor: pointer;
       display: flex;
-      padding-right: 5vw;
+      margin-right: 5vw;
 
       &:nth-last-child(1) {
         margin-right: 0;
@@ -31,6 +36,10 @@
         display: block;
         font-size: 1.2em;
         transition: transform 0.3s ease;
+
+        @media screen and (max-width: $layout-breakpoint-xsmall) {
+          font-size: 1em;
+        }
       }
     }
 

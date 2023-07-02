@@ -16,8 +16,16 @@
     justify-content: space-between;
 
     font-family: "Neue Montreal Regular", sans-serif;
-    color: #0B0500;
+    color: $black;
     text-transform: uppercase;
+
+    @media screen and (max-width: $layout-breakpoint-small) {
+      height: 90vh;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-xsmall) {
+      height: 85vh;
+    }
 
     .bar-description {
       display: flex;
@@ -29,15 +37,24 @@
         font-size: 2em;
         font-weight: 300;
         opacity: 0;
+
+        @media screen and (max-width: $layout-breakpoint-small) {
+          font-size: 1.6em;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-xsmall) {
+          font-size: 1.2em;
+        }
       }
     }
 
     .hero-title {
       display: flex;
+      justify-content: center;
       font-family: "Neue Montreal", sans-serif;
       font-style: italic;
-      font-weight: 600;
-      font-size: 20vw;
+      font-weight: bold;
+      font-size: 22.2vw;
       padding-top: 7vh;
       overflow: hidden;
 
@@ -61,6 +78,13 @@
             font-weight: 300;
             transform: translateY(100%);
 
+            @media screen and (max-width: $layout-breakpoint-small) {
+              font-size: 1.1em;
+            }
+
+            @media screen and (max-width: $layout-breakpoint-xsmall) {
+              font-size: 1em;
+            }
           }
 
           &:nth-last-child(1) {
@@ -73,6 +97,14 @@
         display: flex;
         font-size: 2em;
         font-weight: 300;
+
+        @media screen and (max-width: $layout-breakpoint-small) {
+          font-size: 1.6em;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-xsmall) {
+          font-size: 1.2em;
+        }
 
         span {
           opacity: 0;

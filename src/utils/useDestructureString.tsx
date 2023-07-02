@@ -5,8 +5,10 @@ type LocoScrollValues = Array<number>;
 export const destructureString = (string: string, locoScrollValues?: LocoScrollValues): JSX.Element[] => {
     return string.split('').map((letter, i) => {
         const speed = locoScrollValues && locoScrollValues[i] ? locoScrollValues[i] : 1;
-        const attributes = locoScrollValues ? { 'data-scroll': true, 'data-scroll-speed': speed } : {};
-        return letter === ' ' ? <span className='animated-letter' key={i} {...attributes}>&nbsp;</span> : <span className='animated-letter' key={i} {...attributes}>{letter}</span>;
+        const attributes = locoScrollValues ? {'data-scroll': true, 'data-scroll-speed': speed} : {};
+        return letter === ' ' ?
+            <span className="animated-letter" key={i} {...attributes}>&nbsp;</span> :
+            <span key={i} {...attributes}>{letter}</span>;
     });
 };
 

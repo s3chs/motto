@@ -7,6 +7,10 @@
   padding: 0 10vw 13vh 10vw;
   font-family: "Neue Montreal", sans-serif;
 
+  @media screen and (max-width: $layout-breakpoint-xsmall) {
+    padding: 0 10vw;
+  }
+
   .menu-section {
     width: 100%;
 
@@ -15,13 +19,26 @@
       font-size: 2.3em;
       text-transform: uppercase;
       padding-bottom: 10vh;
+      word-wrap: break-word;
+      color: $black;
+
+      @media screen and (max-width: $layout-breakpoint-xsmall) {
+        font-size: 2em;
+      }
 
       .menu-title-span {
         display: block;
+        color: $black;
       }
 
       &.beers, &.red-wine, &.white-wine, &.sparkling, &.alcool-free {
         margin-top: 5vh;
+      }
+
+      &.alcool-free{
+        @media screen and (max-width: $layout-breakpoint-xsmall) {
+          font-size: 1.6em;
+        }
       }
 
       &.glass, &.coffee {
@@ -34,8 +51,16 @@
       justify-content: space-between;
       margin-bottom: 5vh;
 
+      @media screen and (max-width: $layout-breakpoint-xsmall) {
+        margin-bottom: 4vh;
+      }
+
       &.beers, &.alcool-free, &.coffee {
         margin-bottom: 1.5vh;
+
+        @media screen and (max-width: $layout-breakpoint-xsmall) {
+          margin-bottom: 1vh;
+        }
       }
 
       .product-details {
@@ -45,15 +70,30 @@
         .product-title {
           font-size: 1.5em;
           padding-bottom: 1vh;
+          color: $black;
+
+          @media screen and (max-width: $layout-breakpoint-xsmall) {
+            font-size: 1.2em;
+          }
         }
 
         .product-ingredients {
           font-size: 1.2em;
+          color: $black;
+
+          @media screen and (max-width: $layout-breakpoint-xsmall) {
+            font-size: 1em;
+          }
         }
       }
 
       .product-price {
         font-size: 1.5em;
+        color: $black;
+
+        @media screen and (max-width: $layout-breakpoint-xsmall) {
+          font-size: 1.2em;
+        }
       }
     }
   }

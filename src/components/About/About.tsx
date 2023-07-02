@@ -1,7 +1,7 @@
 export default function About() {
     return (
         <div className="about-container" data-scroll-section>
-            <span className="section-title" data-scroll data-scroll-speed="1.3" data-scroll-position="top">à propos</span>
+            <span className="section-title" data-scroll data-scroll-speed="1" data-scroll-position="top">à propos</span>
             <div className="about-text" data-scroll data-scroll-speed="1" data-scroll-position="top">
                 <span data-scroll data-scroll-class="reveal-text">
                     Partager, boire, écouter, manger, vivre et beaucoup rigoler.

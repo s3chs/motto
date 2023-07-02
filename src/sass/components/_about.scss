@@ -6,6 +6,12 @@
   flex-direction: column;
   padding: 13vh 10vw;
 
+  @media screen and (max-width: $layout-breakpoint-xsmall) {
+
+    height: 85vh;
+    padding: 0 10vw;
+  }
+
   .about-text {
     display: flex;
 
@@ -13,6 +19,7 @@
     font-size: 1.8em;
     margin-bottom: 8vh;
     padding-bottom: 10px;
+    color: $black;
 
     overflow: hidden;
 
@@ -20,9 +27,20 @@
       margin-bottom: 0;
     }
 
+
+    @media screen and (max-width: $layout-breakpoint-small) {
+      font-size: 1.6em;
+      margin-bottom: 5vh;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-xsmall) {
+      font-size: 1.2em;
+      margin-bottom: 5vh;
+    }
+
     span {
-      transform: translateY(120%);
-      transition: 1.5s transform cubic-bezier(0.76, 0, 0.24, 1);
+      transform: translateY(130%);
+      transition: 1s transform cubic-bezier(0.76, 0, 0.24, 1);
 
       &.reveal-text {
         transform: translateY(0);
