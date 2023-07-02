@@ -34,7 +34,7 @@ export default function Hero() {
             y: 0,
             ease: 'elastic.inOut',
             stagger: 0.2,
-            delay: -1,
+            delay: -1.3,
         }).to('.bar-openings span', {
             duration: 0.8,
             y: 0,
