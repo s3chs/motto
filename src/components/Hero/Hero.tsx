@@ -15,7 +15,21 @@ export default function Hero() {
 
     useEffect(() => {
         const tl = gsap.timeline();
-        tl.to('.hero-title span', {
+        tl.to('.introduction-container span', {
+            duration: 0.7,
+            opacity: 1,
+            ease: 'power4.inOut',
+            stagger: 0.060,
+            delay: 0.5,
+        }).to('.introduction-container span', {
+            duration: 1,
+            opacity: 0,
+            ease: 'power4.inOut',
+            stagger: 0.060,
+            delay: -0.5,
+        }).set('.introduction-container', {
+            display: 'none',
+        }).to('.hero-title span', {
             duration: 3,
             y: 0,
             ease: 'elastic.inOut',
