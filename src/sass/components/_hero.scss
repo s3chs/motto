@@ -20,11 +20,7 @@
     text-transform: uppercase;
 
     @media screen and (max-width: $layout-breakpoint-small) {
-      height: 90vh;
-    }
-
-    @media screen and (max-width: $layout-breakpoint-xsmall) {
-      height: 85vh;
+      padding: 18vh 10vw;
     }
 
     .bar-description {
@@ -61,6 +57,10 @@
       font-size: 20.5vw;
       padding-top: 7vh;
       overflow: hidden;
+
+      @media screen and (max-width: $layout-breakpoint-xsmall) {
+        padding-top: 12vh;
+      }
 
       span {
         transform: translateY(100%);

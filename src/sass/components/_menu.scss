@@ -4,8 +4,8 @@
 
   display: flex;
   flex-direction: column;
-  padding: 0 10vw 13vh 10vw;
   font-family: "Sechs", sans-serif;
+  padding: 5vh 10vw 0 10vw;
 
   @media screen and (max-width: $layout-breakpoint-xsmall) {
     padding: 0 10vw;
